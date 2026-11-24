@@ -1,47 +1,48 @@
-<!**CTYPE html**<html>
+<!DOCTYPE html>
+<html>
 <head>
+  <meta charset="utf-8">
 
-**<meta**harset="utf-8"/**
-  <link rel="stylesheet**    href="https://js**rcgis.com/4.31**sri/themes**ight/main.css">
+  <link rel="stylesheet"
+        href="https://js.arcgis.com/4.31/esri/themes/light/main.css">
 
-  <script src**https://js.arcgis.com/4.**/"></script>
+  <script src="https://js.arcgis.com/4.31/"></script>
 
- **style>
-
-    html,
-    body**    #viewDiv{
-     **argin:0;
-      padding:0;
-     **idth:100%;
-      height:100%;
-   **
-
+  <style>
+    html, body, #viewDiv {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
   </style>
-
 </head>
 
 <body>
 
-**iv id="viewDiv"></div>
+<div id="viewDiv"></div>
 
 <script>
-***quire(**  "esri/WebMap",
-  "esri/views/Ma**iew"
-], function(WebMap, MapView)**
-  const map** new WebMap({
-    portal**em:{
-**    id:"f2*****2544**5f**0ca**c**71**a**"
-    }
+
+require([
+  "esri/Map",
+  "esri/views/MapView"
+], function(Map, MapView){
+
+  const map = new Map({
+    basemap: "streets-vector"
   });
 
-**const view = new MapView({
-    co**ainer**viewDiv",
-    map**ap
+  const view = new MapView({
+    container: "viewDiv",
+    map: map,
+    center: [3.6139, 51.4988],
+    zoom: 13
   });
 
 });
 
 </script>
 
-</**dy>
+</body>
 </html>
