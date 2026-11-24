@@ -1,1 +1,47 @@
-AR Demo Werkt!
+<!**CTYPE html**<html>
+<head>
+
+**<meta**harset="utf-8"/**
+  <link rel="stylesheet**    href="https://js**rcgis.com/4.31**sri/themes**ight/main.css">
+
+  <script src**https://js.arcgis.com/4.**/"></script>
+
+ **style>
+
+    html,
+    body**    #viewDiv{
+     **argin:0;
+      padding:0;
+     **idth:100%;
+      height:100%;
+   **
+
+  </style>
+
+</head>
+
+<body>
+
+**iv id="viewDiv"></div>
+
+<script>
+***quire(**  "esri/WebMap",
+  "esri/views/Ma**iew"
+], function(WebMap, MapView)**
+  const map** new WebMap({
+    portal**em:{
+**    id:"f2*****2544**5f**0ca**c**71**a**"
+    }
+  });
+
+**const view = new MapView({
+    co**ainer**viewDiv",
+    map**ap
+  });
+
+});
+
+</script>
+
+</**dy>
+</html>
